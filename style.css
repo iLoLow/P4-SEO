@@ -6,9 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-img {
-    aspect-ratio: attr(width) / attr(height);
-  }
+
 #bloc-4-portfolio img{
     width: 100%;
 }
@@ -139,7 +137,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black;
 }
 
 .d-bloc .a-btn:hover,
@@ -547,7 +545,7 @@ a[data-lightbox] {
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-display: swap;
+
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -659,7 +657,6 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-display: swap;
     font-weight: 400;
     color: #575757!important;
 }
@@ -698,7 +695,7 @@ p {
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
-    font-display: swap;
+
 }
 
 .cta-hero {
@@ -747,7 +744,7 @@ h4 {
 }
 
 .white {
-    color: #000000!important;
+    color: black!important;
 }
 
 .portfolio-thumb {
@@ -764,7 +761,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 0.9);
     padding: 40px 40px 40px 40px;
 }
 
@@ -786,12 +783,12 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -859,13 +856,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -883,10 +880,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -895,8 +889,7 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+
     }
 }
 
@@ -999,6 +992,7 @@ h4 {
     .bloc-md {
         padding-left: 0;
         padding-right: 0;
+        color: #000000;
     }
     .bloc-tile-2 .container,
     .bloc-tile-3 .container,
